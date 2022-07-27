@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<div class="container">
+  <form>
+    <label for="From">From</label>
+    <input type="text" [(ngModel)]="data.From" id="From" name="From" placeholder="From">
+
+    <label for="To">To</label>
+    <input type="text"  [(ngModel)]="data.To" id="To" name="To" placeholder="To">
+
+    
+    <label for="Arrival">Departure Date:</label>
+    <mat-form-field appearance="fill" class="datepick">
+        
+        <input matInput [matDatepicker]="picker" [(ngModel)]="data.Departure" id="Departure" name="Departure" >
+      
+        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-datepicker #picker></mat-datepicker>
+      </mat-form-field>
+      <label for="Arrival">Arrival Date:</label>
+      <mat-form-field appearance="fill" class="datepick">
+        
+        <input matInput [matDatepicker]="picker" [(ngModel)]="data.Arrival" id="Arrival" name="Arrival" >
+      
+        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-datepicker #picker></mat-datepicker>
+      </mat-form-field>
+  
+    
+
+    <label for="Instrument">  Instrument </label>
+    <input type="text" [(ngModel)]="data.Instrument" id="Instrument" name="Instrument" placeholder="Instrument No">
+
+    <label for="Days">  Scheduled Days: </label>
+    <input type="text" [(ngModel)]="data.Days" id="Days" name="Days" placeholder="Scheduled Days">
+
+    <label for="BusinessSeats"> No of Business Seats</label>
+    <input type="text"  [(ngModel)]="data.BusinessSeats" id="BusinessSeats" name="BusinessSeats" placeholder="BusinessSeats">
+
+    <label for="NonBusinessSeats"> No of Non-Business Seats:</label>
+    <input type="text" [(ngModel)]="data.NonBusinessSeats" id="NonBusinessSeats" name="NonBusinessSeats" placeholder="NonBusinessSeats">
+
+    <label for="Cost">Cost</label>
+    <input type="text"  [(ngModel)]="data.Cost" id="Cost" name="Cost" placeholder="Cost">
+
+    <label for="Rows">Rows</label>
+    <input type="text" [(ngModel)]="data.Rows" id="Rows" name="Rows" placeholder="Rows">
+
+   
+    
+
+
+    <label for="Meal">Meal</label>
+    <select [(ngModel)]="data.Meal" id="Meal" name="Meal">
+      <option value="Veg">Veg</option>
+      <option value="Non Veg">Non Veg </option>
+      <option value="Both">Both</option>
+    </select>
+
+    <label for="Triptype">Trip Type</label>
+    <select [(ngModel)]="data.Triptype" id="Triptype" name="Triptype">
+      <option value="OneWay">OneWay</option>
+      <option value="Round">Round</option>
+    </select>
+    
+    <input type="submit" (click)="submit()" value="Add">
+  </form>
+</div>
+
+</body>
+</html>
+
+

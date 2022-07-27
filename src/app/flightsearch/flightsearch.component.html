@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<div class="container">
+  <form>
+      <h3>Search Flights</h3>
+    <label for="From">From Place</label>
+    <input type="text" [(ngModel)]="data.From" id="From" name="From" placeholder="From">
+
+    <label for="To">To Place</label>
+    <input type="text"  id="To" name="To" placeholder="To">
+
+    <label for="TripType">Trip Type</label>
+    <input type="text"  [(ngModel)]="data.TripType" id="TripType" name="TripType" placeholder="Trip Type">
+    <label for="DepartureDate">Departure Date</label>
+    <input type="text"  [(ngModel)]="data.DepartureDate" id="DepartureDate" name="DepartureDate" placeholder="Departure Date">
+
+    <input type="submit" (click)="submit()" value="Search">
+  </form>
+</div>
+
+</body>
+</html>
+
+
