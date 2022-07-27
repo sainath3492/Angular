@@ -16,6 +16,7 @@ import { CreateairlineComponent } from './createairline/createairline.component'
 import { FlightsearchComponent } from './flightsearch/flightsearch.component';
 import { MatCardModule } from '@angular/material/card';
 import { MatToolbarModule } from '@angular/material/toolbar';
+import { SearchBookingComponent } from './search-booking/search-booking.component';
 
 
 @NgModule({
@@ -24,7 +25,8 @@ import { MatToolbarModule } from '@angular/material/toolbar';
     AirlinesComponent,
     InventoryComponent,
     CreateairlineComponent,
-    FlightsearchComponent
+    FlightsearchComponent,
+    SearchBookingComponent
   ],
   imports: [
     BrowserModule,
